@@ -24,7 +24,7 @@ function compare(a,b) {
 function returnWords(){
   var data= document.getElementById('txt').value;
   var arr = [];
-  var freq = wordFreq(data);
+  var freq = wordFreq(data.toLowerCase());
   Object.keys(freq).sort().forEach(function(word) {
   		var obj = {};
       obj["text"] = word;
