@@ -1,4 +1,4 @@
-var stopWords = ["a", "an", "and", "Tien"];
+var stopWords = ["a", "an", "and", "tien"];
 
 function wordFreq(string) {
     var words = string.replace(/[.]/g, '').split(/\s/);
