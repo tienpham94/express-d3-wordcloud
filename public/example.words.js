@@ -1,4 +1,4 @@
-var stopWords = ["a", "an", "and"];
+var stopWords = ["a", "an", "and", "Tien"];
 
 function wordFreq(string) {
     var words = string.replace(/[.]/g, '').split(/\s/);
@@ -32,7 +32,7 @@ function returnWords(){
       arr.push(obj);
   });
   return arr.filter(function(el) {
-      return el.text !== "and";
+      return stopWords.indexOf(el.text) === -1;
     }).sort(compare);
 };
 
