@@ -9,12 +9,12 @@
     <br />
     <textarea id="txt" cols="35" rows="10" placeholder="">Tien tien tIen Tien Lorem Tien Tien Tien Tien Tien Tien Tien Tien Lorem Tien Tien Tien Tien Tien Tien Tien Tien Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus impedit voluptatum ex, sit minima asperiores autem</textarea>
     </br>
-    <button type="button" onclick="drawWordCloud();">Draw WordCloud</button>
+    <button type="button" onclick="drawWordCloud()">Draw WordCloud</button>
     <div id='wordcloud'></div>
 
     <script src="/lib/d3/d3.js" charset="utf-8"></script>
     <script src="/lib/d3/d3.layout.cloud.js"></script>
     <script src="/d3.wordcloud.js"></script>
-    <script src="/example.words.js"></script>
+    <script type="text/javascript" src="/bundle.js"></script>
   </body>
 </html>
