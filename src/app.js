@@ -21,6 +21,7 @@ function compare(a,b) {
   return 0;
 }
 
+
 function returnWords(){
   var data= document.getElementById('txt').value;
   var arr = [];

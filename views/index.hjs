@@ -7,7 +7,7 @@
     <h1>Word Cloud</h1>
     <h3>Draw the wordcloud based on the text input by clicking "Draw Wordcloud" Button</h3>
     <br />
-    <textarea id="txt" cols="35" rows="10" placeholder="">Tien tien tIen Tien Lorem Tien Tien Tien Tien Tien Tien Tien Tien Lorem Tien Tien Tien Tien Tien Tien Tien Tien Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus impedit voluptatum ex, sit minima asperiores autem</textarea>
+    <textarea id="txt" cols="35" rows="10" placeholder="">Tien tien Tien tieN TiEn Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim non ante interdum bibendum. Vivamus imperdiet pretium velit vitae tempus. Integer ultrices eros eu libero venenatis, quis laoreet massa accumsan. Aliquam vitae purus consectetur, vestibulum purus eget, mattis metus. Aenean sed dolor libero. Nulla eget sapien eget sapien aliquet congue feugiat et ligula. Nulla facilisi. Praesent auctor leo ullamcorper risus posuere pellentesque. Duis vulputate et orci vitae congue. Ut molestie magna lectus, sit amet efficitur purus tempor id. Quisque tristique ipsum mi, nec dapibus dui lacinia quis. Suspendisse imperdiet ipsum et nibh placerat, sit amet lacinia neque laoreet. Curabitur.</textarea>
     </br>
     <button type="button" onclick="drawWordCloud()">Draw WordCloud</button>
     <div id='wordcloud'></div>
