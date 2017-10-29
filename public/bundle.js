@@ -73,7 +73,7 @@
 var stopWords = ["a", "an", "and", "tien"];
 
 function wordFreq(string) {
-  var words = string.replace(/[.]/g, '').split(/\s/);
+  var words = string.replace(/[.,]/g, '').split(/\s/);
   var freqMap = {};
   words.forEach(function (w) {
     if (!freqMap[w]) {
@@ -107,11 +107,11 @@ function returnWords() {
 };
 
 function drawWordCloud() {
+  document.getElementById("wordcloud").innerHTML = "";
   var words = returnWords();
-  d3.wordcloud().size([500, 300]).selector('#wordcloud').fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"])).words(words).onwordclick(function (d, i) {
-    if (d.href) {
-      window.location = d.href;
-    }
+  d3.wordcloud().size([400, 400]).selector('#wordcloud').scale("log").fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"])).words(words).onwordclick(function (d, i) {
+    var div = document.getElementById('result');
+    div.innerHTML += d.text + ", ";
   }).start();
 }
 
